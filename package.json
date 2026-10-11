@@ -2,14 +2,27 @@
   "name": "pi-plan-mode",
   "version": "1.0.0",
   "description": "Approval-gated plan workflow for pi: propose_plan dialog, enforcement gate, plan checklist widget, [DONE:n] tracking, /plan and /plans commands.",
-  "keywords": ["pi-package"],
+  "type": "module",
+  "keywords": [
+    "pi-package"
+  ],
   "license": "MIT",
   "pi": {
-    "extensions": ["./extensions/plan-mode.ts"]
+    "extensions": [
+      "./extensions/plan-mode.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test test/smoke.mjs"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*",
     "@earendil-works/pi-tui": "*",
     "typebox": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^24.0.0"
   }
 }
