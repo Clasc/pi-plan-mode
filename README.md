@@ -1,4 +1,4 @@
-# pi-plan-mode
+# pi-plan-mode [![CI](https://github.com/Clasc/pi-plan-mode/actions/workflows/ci.yml/badge.svg)](https://github.com/Clasc/pi-plan-mode/actions/workflows/ci.yml)
 
 Approval-gated **plan-first workflow** for [pi](https://pi.dev) — a single-file extension that forces alignment → plan → explicit approval before any non-trivial implementation.
 
